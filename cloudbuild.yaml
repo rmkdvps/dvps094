@@ -1,3 +1,11 @@
 steps:
   - name: 'ubuntu'
     args: ['echo', 'hello rmkaaa!!!!!']
+
+  - name: 'hashicorp/terraform'
+    args: ['init']
+    dir: '/'
+  - name: 'hashicorp/terraform'
+    dir: '/'
+    args: ['apply','-var=project_id=softserve-project','--auto-approve']
+timeout: 1200s

@@ -1,9 +1,14 @@
 steps:
-  - name: 'hashicorp/terraform'
-    args: ['init']
-    # dir: 'terraform/'
-  
-  - name: 'hashicorp/terraform'
-    # dir: 'terraform/'
-    args: ['apply','-var=project_id=softserve-project','--auto-approve']
-timeout: 1200s
+  - name: 'ubuntu'
+    args: ['echo', '>', '$TESTSECRET']
+
+  # - name: 'ubuntu'
+  #   args: ['cat', 'text.txt']
+
+#   - name: 'hashicorp/terraform'
+#     args: ['init']
+#     # dir: 'terraform/'
+#   - name: 'hashicorp/terraform'
+#     # dir: 'terraform/'
+#     args: ['apply','-var=project_id=softserve-project','--auto-approve']
+# timeout: 1200s

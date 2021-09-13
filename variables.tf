@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "github_repository" {
-    default = "https://github.com/rmkdvps/dvps094"
+    default = "dvps094"
 }
 
 variable "github_owner" {
@@ -11,7 +11,7 @@ variable "github_owner" {
 }
 
 variable "github_branch" {
-    default = "^master$"
+    default = "master"
 }
 variable "project" {
   description = "name of the project"

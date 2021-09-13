@@ -11,7 +11,7 @@ variable "github_owner" {
 }
 
 variable "github_branch" {
-    default = "master"
+    default = "^master$"
 }
 variable "project" {
   description = "name of the project"

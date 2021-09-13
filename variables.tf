@@ -17,3 +17,7 @@ variable "project" {
   description = "name of the project"
   default     = "softserve-project"
 }
+variable "project_id" {
+  description = "project id"
+  default     = "softserve-project"
+}

@@ -2,7 +2,8 @@ steps:
   - name: 'hashicorp/terraform'
     args: ['init']
     # dir: 'terraform/'
+  
   - name: 'hashicorp/terraform'
     # dir: 'terraform/'
     args: ['apply','-var=project_id=softserve-project','--auto-approve']
-timeout: 1200s
+timeout: 1300s
